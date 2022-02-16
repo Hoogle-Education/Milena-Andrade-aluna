@@ -21,10 +21,7 @@ int main(int argc, char **argv)
 
   if(argc != 2) return 0;
 
-  // strlen -> 1 -> caracter -> printf(caracter)
-  // strlen > 1 -> string -> ...
-
-  // printf("Divisores: %c\n", *argv[1]);
-  Divisores( (int)atof(argv[1]) );
+  printf("Divisores: %d\n", atoi(argv[1]));
+  Divisores( atoi(argv[1]) );
 
 }
